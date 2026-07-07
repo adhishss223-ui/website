@@ -1,0 +1,202 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXOCORE Profile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#05090d;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    color:#d9ff00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.profile-container{
+    padding:25px;
+}
+
+.profile-card{
+    background:#0f1720;
+    border:1px solid #1f2937;
+    border-radius:15px;
+    text-align:center;
+    padding:25px;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:4px solid #d9ff00;
+    object-fit:cover;
+}
+
+.profile-name{
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.profile-email{
+    color:#94a3b8;
+    margin-top:5px;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    margin-top:25px;
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.stat-box h3{
+    color:#d9ff00;
+    font-size:24px;
+}
+
+.menu{
+    margin-top:30px;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    background:#0f1720;
+    border:1px solid #1f2937;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.menu-item:hover{
+    background:#111827;
+}
+
+.logout{
+    width:100%;
+    margin-top:20px;
+    padding:13px;
+    background:#d9ff00;
+    color:black;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+   transition:.4s;
+}
+ .logout:hover{
+    transform:translateY(-10px);
+   
+
+
+
+}
+
+
+</style>
+</head>
+<body>
+<link href="personal.html">
+<header  id="personal" >
+    <div class="logo">EXOCORE</div>
+    
+</header>
+
+<div class="profile-container">
+
+    <div class="profile-card">
+
+        <img src="person.jpg" alt="Profile" class="profile-img">
+
+        <h2 class="profile-name">Adhish SS</h2>
+
+        <p class="profile-email">
+            adhish@example.com
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3>12</h3>
+                <p>Orders</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>8</h3>
+                <p>Wishlist</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>3</h3>
+                <p>Rewards</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="menu">
+
+        <div class="menu-item">
+            <span> My Orders</span>
+            <span>›</span>
+        </div>
+
+        <div class="menu-item">
+            <span> Wishlist</span>
+            <span>›</span>
+        </div>
+
+        <div class="menu-item">
+            <span> Address</span>
+            <span>›</span>
+        </div>
+
+        <div class="menu-item">
+            <span>Payment Methods</span>
+            <span>›</span>
+        </div>
+
+        <div class="menu-item">
+            <span> Settings</span>
+            <span>›</span>
+        </div>
+
+        <button class="logout">
+            LOG OUT
+        </button>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

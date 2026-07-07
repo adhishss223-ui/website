@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#05090d;
+    color:white;
+   
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#d9ff00;
+}
+
+.logo span{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    height:100vh;
+    
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    bottom:100px;
+    left:8%;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1;
+}
+
+.hero h1 span{
+    color:#d9ff00;
+}
+
+.button{
+
+ padding:10px;
+background-color:orange;
+box-shadow:0px 0px 20px ;
+font-size:11px;
+
+}
+button:hover{
+
+box-shadow:0px 0px 0px yellow;
+transition:0.1s;
+padding:11px;
+}
+
+
+
+
+.products,
+.intent,
+.insights,
+.newsletter{
+    padding:80px 8%;
+}
+
+.section-title h2,
+.intent h2,
+.insights h2,
+.newsletter h2{
+    font-size:3rem;
+    margin-bottom:40px;
+}
+
+span{
+    color:#d9ff00;
+}
+
+.product-grid,
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card,
+.blog-card{
+    background:#10161c;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover,
+.blog-card:hover{
+    transform:translateY(-10px);
+}
+
+.card img,
+.blog-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3,
+.blog-card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 15px;
+}
+
+.newsletter{
+    text-align:center;
+}
+
+.newsletter input{
+    width:350px;
+    max-width:90%;
+    padding:15px;
+    margin-top:20px;
+    background:#111;
+    border:1px solid #333;
+    color:white;
+}
+
+.newsbutton{
+
+ padding:10px;
+background-color:orange;
+box-shadow:0px 0px 20px ;
+font-size:11px;
+
+}
+.newsbutton:hover{
+ color:yellow;
+transition:0.1s;
+
+}
+
+
+
+footer{
+    padding:40px 8%;
+    border-top:1px solid #222;
+    text-align:center;
+}
+
+.footer-links{
+    margin-top:20px;
+}
+
+.footer-links a{
+    color:#aaa;
+    text-decoration:none;
+    margin:0 15px;
+}

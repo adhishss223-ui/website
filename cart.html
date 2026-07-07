@@ -1,0 +1,230 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXOCORE Cart</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#05090d;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    color:#d9ff00;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.cart-count{
+    color:#d9ff00;
+    font-size:20px;
+}
+
+.container{
+    padding:20px;
+}
+
+.title{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.cart-item{
+    display:flex;
+    gap:15px;
+    background:#0f1720;
+    border:1px solid #1f2937;
+    margin-bottom:20px;
+    padding:15px;
+}
+
+.cart-item img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+}
+
+.details{
+    flex:1;
+}
+
+.details h3{
+    margin-bottom:8px;
+}
+
+.details p{
+    color:#d9ff00;
+}
+
+.qty{
+    margin-top:15px;
+}
+
+.qty button{
+    width:30px;
+    height:30px;
+    border:none;
+    background:#1f2937;
+    color:white;
+    cursor:pointer;
+}
+
+.qty span{
+    margin:0 10px;
+}
+
+.price{
+    color:#d9ff00;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.summary{
+    background:#0f1720;
+    border:1px solid #1f2937;
+    padding:20px;
+    margin-top:30px;
+}
+
+.summary h2{
+    margin-bottom:20px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0;
+}
+
+.total{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid #333;
+    font-size:28px;
+    font-weight:bold;
+    color:#d9ff00;
+}
+
+.checkout{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    background:#d9ff00;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.checkout:hover{
+    opacity:.9;
+}
+
+</style>
+<link href="cart.html">
+</head>
+<body>
+
+<header>
+    <div class="logo">EXOCORE</div>
+    <div class="cart-count">2</div>
+</header>
+
+<div class="container">
+
+    <h1 class="title">YOUR LOADOUT</h1>
+
+    <div class="cart-item">
+
+        <img src="ghj.jpg" alt="">
+
+        <div class="details">
+            <h3>INSTINCT ELITE</h3>
+            <p>Carbon Black / Lime</p>
+
+            <div class="qty">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="price">$249</div>
+
+    </div>
+
+    <div class="cart-item">
+
+        <img src="jkl.jpg" alt="">
+
+        <div class="details">
+            <h3>TACTICAL VEST</h3>
+            <p>Titanium Black</p>
+
+            <div class="qty">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="price">$195</div>
+
+    </div>
+
+    <div class="summary">
+
+        <h2>ORDER SUMMARY</h2>
+
+        <div class="row">
+            <span>Subtotal</span>
+            <span>$444.00</span>
+        </div>
+
+        <div class="row">
+            <span>Shipping</span>
+            <span>$15.50</span>
+        </div>
+
+        <div class="row">
+            <span>Tax</span>
+            <span>$24.22</span>
+        </div>
+
+        <div class="total">
+            <span>TOTAL</span>
+            <span>$483.72</span>
+        </div>
+
+        <button class="checkout"
+        onclick="window.location.href='checkout.html'">
+            PROCEED TO CHECKOUT
+        </button>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

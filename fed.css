@@ -1,0 +1,139 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#05090d;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    color:#d9ff00;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.hero img{
+    width:100%;
+    height:70vh;
+    display:flexbox;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.series{
+    color:#d9ff00;
+    letter-spacing:3px;
+    font-size:12px;
+}
+
+h1{
+    font-size:48px;
+    margin:10px 0;
+}
+
+.price{
+    color:#d9ff00;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.description{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.specs{
+    padding:20px;
+}
+
+.specs h2{
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.spec-card{
+    border:1px solid #2a3340;
+    padding:20px;
+    background:#0b1117;
+}
+
+.spec-card span{
+    color:#d9ff00;
+    font-size:24px;
+}
+
+.spec-card p{
+    color:#d9ff00;
+    font-size:22px;
+    margin-top:10px;
+}
+
+.review{
+    padding:20px;
+
+}
+
+.review-card{
+    border:1px solid #2a3340;
+    background:#0b1117;
+    padding:12px;
+    
+}
+
+.stars{
+    color:#d9ff00;
+}
+
+.related{
+    padding:20px;
+}
+
+.products{
+    display:flex;
+    height:45px;
+    
+    gap:60px;
+
+}
+
+.product{
+    border:1px solid #257efb;
+    padding:40px;
+    width:23%;
+    height:34vh;
+}
+
+.product img{
+    width:100%;
+    display:flex;
+    align-items: center;
+
+    object-fit: cover;
+overflow:hidden;
+height:18vh;
+}
+
+.product h3{
+    color:#d9ff00;
+    margin-top:10px;
+
+}
